@@ -29,32 +29,32 @@ public class AddressBuilder implements Builder<Address> {
 	}
 	
 	public AddressBuilder withLine1(String line1) {
-		this.line1 = line1;
+		this.line1 = line1.replaceAll("[^a-zA-Z0-9]+","");
 		return this;
 	}
 	
 	public AddressBuilder withLine2(String line2) {
-		this.line2 = line2;
+		this.line2 = line2.replaceAll("[^a-zA-Z0-9]+","");
 		return this;
 	}
 	
 	public AddressBuilder withCity(String city) {
-		this.city = city;
+		this.city = city.replaceAll("[^a-zA-Z0-9]+","");
 		return this;
 	}
 	
 	public AddressBuilder withState(String state) {
-		this.state = state;
+		this.state = state.replaceAll("[^a-zA-Z]+","");
 		return this;
 	}
 	
 	public AddressBuilder withCountry(String country) {
-		this.country = country;
+		this.country = country.replaceAll("[^a-zA-Z0-9]+","");
 		return this;
 	}
 	
 	public AddressBuilder withZipCode(String zipCode) {
-		this.zipCode = zipCode;
+		this.zipCode = zipCode.replaceAll("[^a-zA-Z0-9]+","");
 		return this;
 	}
 	

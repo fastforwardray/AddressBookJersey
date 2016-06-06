@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 /**
  * @author Harsha.Ramakrishnapp
  *
+ *Class not used. Tomcat error resolved by changing servlet class to org.sun....
  */
 public class HttpPageServlet extends HttpServlet{
 

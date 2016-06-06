@@ -29,17 +29,18 @@ public class NameBuilder implements Builder<Name> {
 	}
 	
 	public NameBuilder withFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstName = firstName.replaceAll("[^a-zA-Z]+","");
 		return this;
 	}
 	
 	public NameBuilder withLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastName = lastName.replaceAll("[^a-zA-Z]+","");
 		return this;
 	}
 	
 	public NameBuilder withMiddleInitial(String middleInitial) {
-		this.middleInitial = middleInitial;
+		this.middleInitial = middleInitial.replaceAll("[^a-zA-Z]+","");
+		this.middleInitial = this.middleInitial.substring(0,  1).toUpperCase();
 		return this;
 	}
 

@@ -10,12 +10,14 @@ import java.util.Map.Entry;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import edu.intuit.addressbook.interfaces.Entity;
+
 /**
  * @author Harsha.Ramakrishnapp
  *
  */
 @XmlRootElement
-public class Contact {
+public class Contact implements Entity{
 	/**
 	 * 
 	 */

@@ -21,7 +21,7 @@ public class ContactBuilder implements Builder<Contact> {
 		return new ContactBuilder();
 	}
 	
-	private int ID;
+	private Integer ID;
 	private Name name;
 	private java.util.Date dateOfBirth;
 	private Map<String, Address> address;
@@ -35,7 +35,7 @@ public class ContactBuilder implements Builder<Contact> {
 		return contact;
 	}
 	
-	public ContactBuilder withID(int ID) {
+	public ContactBuilder withID(Integer ID) {
 		this.ID = ID;
 		return this;
 	}
